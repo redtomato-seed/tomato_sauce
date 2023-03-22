@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello World! in HTML voorbeeld</title>
+   </head>
+   <body>
+      <p>Hello World!</p>
+   </body>
+</html>
+
+Microsoft Windows [Version 10.0.19045.2728]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Paul\Documents\Development>git clone https://github.com/redtomato-seed/tomato_sauce.git
+Cloning into 'tomato_sauce'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\Paul\Documents\Development> notepad
+
+C:\Users\Paul\Documents\Development>dir
+ Volume in drive C is Acer
+ Volume Serial Number is 1CE3-AB74
+
+ Directory of C:\Users\Paul\Documents\Development
+
+03/22/2023  18:05    <DIR>          .
+03/22/2023  18:05    <DIR>          ..
+03/22/2023  18:21    <DIR>          tomato_sauce
+               0 File(s)              0 bytes
+               3 Dir(s)   8,311,087,104 bytes free
+
+C:\Users\Paul\Documents\Development>cd tomato_sauce
+
+C:\Users\Paul\Documents\Development\tomato_sauce>dir
+ Volume in drive C is Acer
+ Volume Serial Number is 1CE3-AB74
+
+ Directory of C:\Users\Paul\Documents\Development\tomato_sauce
+
+03/22/2023  18:21    <DIR>          .
+03/22/2023  18:21    <DIR>          ..
+03/22/2023  18:20               158 index.html
+03/22/2023  18:06                30 README.md
+               2 File(s)            188 bytes
+               2 Dir(s)   8,311,087,104 bytes free
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git add -A
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git commit -m "index aangemaakt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Paul@LAPTOP-C8P0I1B7.(none)')
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git config --global user.email "iotcellar@gmail.com"
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git config --global user.name "Paul"
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git commit -m "index aangemaakt"
+[main a767d85] index aangemaakt
+ 1 file changed, 9 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 373 bytes | 186.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/redtomato-seed/tomato_sauce.git
+   215e230..a767d85  main -> main
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 715 bytes | 44.00 KiB/s, done.
+From https://github.com/redtomato-seed/tomato_sauce
+   a767d85..ad8aab8  main       -> origin/main
+Updating a767d85..ad8aab8
+Fast-forward
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git checkout -b test
+Switched to a new branch 'test'
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git push -u origin test
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/redtomato-seed/tomato_sauce/pull/new/test
+remote:
+To https://github.com/redtomato-seed/tomato_sauce.git
+ * [new branch]      test -> test
+branch 'test' set up to track 'origin/test'.
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git add -A
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git commit -m "3 aangemaakt"
+[test 0e1ea24] 3 aangemaakt
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 156.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/redtomato-seed/tomato_sauce.git
+   ad8aab8..0e1ea24  test -> test
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git merge test
+Updating ad8aab8..0e1ea24
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Paul\Documents\Development\tomato_sauce>git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/redtomato-seed/tomato_sauce.git
+   ad8aab8..0e1ea24  main -> main
+
+C:\Users\Paul\Documents\Development\tomato_sauce>
